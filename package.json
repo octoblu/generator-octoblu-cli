@@ -1,6 +1,6 @@
 {
   "name": "generator-octoblu-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A generator for Yeoman",
   "keywords": [
     "yeoman-generator"
@@ -28,6 +28,7 @@
     "yeoman-generator": "^0.23.4"
   },
   "devDependencies": {
+    "fs-extra": "^0.30.0",
     "mocha": "^2.4.5",
     "rimraf": "^2.2.8",
     "yeoman-assert": "^2.2.1",
