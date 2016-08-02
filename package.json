@@ -1,0 +1,44 @@
+{
+  "name": "generator-octoblu-cli",
+  "version": "1.0.0",
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/octoblu/generator-octoblu-cli",
+  "bugs": "https://github.com/octoblu/generator-octoblu-cli/issues",
+  "author": {
+    "name": "Octoblu",
+    "url": "https://github.com/octoblu"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/octoblu/generator-octoblu-cli.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*.spec.coffee"
+  },
+  "dependencies": {
+    "coffee-errors": "^0.8.6",
+    "coffee-script": "^1.10.0",
+    "github": "^1.2.0",
+    "html-wiring": "^1.2.0",
+    "lodash": "^4.13.1",
+    "yeoman-generator": "^0.23.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "rimraf": "^2.2.8",
+    "yeoman-assert": "^2.2.1",
+    "yeoman-test": "^1.4.0"
+  },
+  "peerDependencies": {
+    "yo": "^1.8.4"
+  },
+  "engines": {
+    "node": ">=5.0.0",
+    "npm": ">=3.0.0"
+  },
+  "license": "MIT"
+}
