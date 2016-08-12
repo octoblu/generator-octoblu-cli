@@ -37,7 +37,7 @@ $ npm install -g generator-octoblu-cli
 Finally, initiate the generator:
 
 ```
-$ yo generator-octoblu-cli
+$ yo octoblu-cli
 ```
 
 ### Getting To Know Yeoman
