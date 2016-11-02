@@ -28,7 +28,7 @@ class Command
     options = parser.parse(process.argv)
 
     if options.help
-      console.log "usage: <%= appname %> [OPTIONS]\noptions:\n#{parser.help({includeEnv: true})}"
+      console.log @usage parser.help({includeEnv: true})
       process.exit 0
 
     if options.version
@@ -36,7 +36,7 @@ class Command
       process.exit 0
 
     if !options.example
-      console.error "usage: <%= appname %> [OPTIONS]\noptions:\n#{parser.help({includeEnv: true})}"
+      console.error @usage parser.help({includeEnv: true})
       console.error colors.red 'Missing required parameter --example, -e, or env: EXAMPLE'
       process.exit 1
 
@@ -50,5 +50,12 @@ class Command
     console.error 'ERROR'
     console.error error.stack
     process.exit 1
+
+  usage: (optionsStr) =>
+    """
+    usage: <%= appname %> [OPTIONS]
+    options:
+    #{optionsStr}
+    """
 
 module.exports = Command

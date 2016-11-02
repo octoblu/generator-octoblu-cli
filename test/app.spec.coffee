@@ -6,7 +6,7 @@ helpers = require 'yeoman-test'
 assert  = require 'yeoman-assert'
 
 GENERATOR_NAME = 'app'
-DEST           = path.join __dirname, '..', 'tmp', "generator-#{GENERATOR_NAME}"
+DEST           = path.join __dirname, '..', 'tmp', "#{GENERATOR_NAME}"
 
 describe 'app', ->
   before (done) ->

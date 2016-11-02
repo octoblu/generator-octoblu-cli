@@ -51,7 +51,7 @@ class OctobluCliGenerator extends yeoman.Base
     @copy '_command.js', 'command.js'
 
   writing: =>
-    context = {@appname, @githubUrl, @realname}
+    context = {@appname, @githubUrl, @realname, @githubUser}
 
     @template '_package.json', 'package.json', context
     @template '_travis.yml', '.travis.yml', context
